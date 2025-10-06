@@ -18,9 +18,35 @@ export default function Page() {
             </div>
           </div>
           <div>
-            <div className="card h-[380px] flex items-center justify-center">
-              <span className="text-slate-400">📱 Phone mockup placeholder (Search → Window → Live Queue)</span>
-            </div>
+import Image from "next/image"; // add at top of this file if not already
+
+<div className="card h-[380px] flex items-center justify-center overflow-hidden">
+  {/* Desktop / tablet: use the wide hero */}
+  <div className="hidden md:block w-full">
+    <Image
+      src="/hero_wide_light_dark_composite.png"
+      alt="DhanAIyu Live Queue — Next-Gen Wait-Time Engine"
+      width={1440}
+      height={820}
+      priority
+      className="w-full h-auto rounded-2xl shadow-xl object-contain"
+      sizes="(max-width: 1024px) 100vw, 720px"
+    />
+  </div>
+
+  {/* Mobile: show the vertical mockup */}
+  <div className="block md:hidden w-full">
+    <Image
+      src="/mock_vertical_light_dark_set.png"
+      alt="DhanAIyu Live Queue — Mobile Preview"
+      width={720}
+      height={1280}
+      priority
+      className="w-full h-auto rounded-2xl shadow-xl object-contain"
+      sizes="100vw"
+    />
+  </div>
+</div>
           </div>
         </div>
       </section>
