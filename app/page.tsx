@@ -1,4 +1,5 @@
 
+import Image from "next/image";
 export default function Page() {
   return (
     <div>
@@ -18,8 +19,6 @@ export default function Page() {
             </div>
           </div>
           <div>
-import Image from "next/image"; // add at top of this file if not already
-
 <div className="card h-[380px] flex items-center justify-center overflow-hidden">
   {/* Desktop / tablet: use the wide hero */}
   <div className="hidden md:block w-full">
