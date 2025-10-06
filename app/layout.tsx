@@ -11,10 +11,14 @@ export const metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en"><body>
-      <header className="border-b border-slate-200">
+      <header className="border-b border-slate-200 h-16 md:h-20 flex items-center">
         <div className="container flex items-center justify-between py-4 gap-6">
-          <Link href="/" className="flex items-center gap-3">
-<Image
+          <Link 
+            href="/"
+          aria-label="DhanAIyu — Home"
+          className="flex items-center" // no gap needed since we removed the text
+          >
+      <Image
     src="/logo.png"
     alt="DhanAIyu Logo"
     width={48}
@@ -22,9 +26,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     priority
     className="shrink-0 rounded-lg ring-1 ring-sky-200/40 shadow-sm"
   />
-  <span className="font-semibold text-[18px] md:text-[20px] tracking-tight">
-    DhanAIyu
-  </span>
           </Link>
           <nav className="hidden md:flex items-center gap-6 text-sm">
             <Link href="/product">Product</Link>
