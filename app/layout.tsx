@@ -1,5 +1,7 @@
 import "./globals.css";
+import Image from "next/image";
 import Link from "next/link";
+
 
 export const metadata = {
   title: "DhanAIyu — Smarter Health Appointments",
@@ -11,7 +13,19 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en"><body>
       <header className="border-b border-slate-200">
         <div className="container flex items-center justify-between py-4 gap-6">
-          <Link href="/" className="flex items-center gap-3"><img src="/logo.png" alt="DhanAIyu" className="h-8 w-8 rounded-lg" /><span className="font-semibold text-xl">DhanAIyu</span></Link>
+          <Link href="/" className="flex items-center gap-3">
+<Image
+    src="/logo.png"
+    alt="DhanAIyu Logo"
+    width={48}
+    height={48}
+    priority
+    className="shrink-0 rounded-lg ring-1 ring-sky-200/40 shadow-sm"
+  />
+  <span className="font-semibold text-[18px] md:text-[20px] tracking-tight">
+    DhanAIyu
+  </span>
+          </Link>
           <nav className="hidden md:flex items-center gap-6 text-sm">
             <Link href="/product">Product</Link>
             <Link href="/clinics">Clinics</Link>
