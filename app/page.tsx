@@ -105,6 +105,26 @@ export default function Page() {
         </div>
       </section>
 
+      {/* PETCARE STRIP */}
+      <section className="section">
+        <div className="container text-center">
+          <h2 className="h2">Built for People—and Pets</h2>
+          <p className="sub">
+            The same AI that reduces wait anxiety for families also powers smoother veterinary visits:
+            live ETAs, vaccination reminders, multi-pet profiles, and emergency triage.
+          </p>
+          <div className="mt-6 flex flex-wrap justify-center gap-3">
+            <span className="badge border-teal-200">Vet Queue & Check-in</span>
+            <span className="badge border-amber-200">Vaccination Reminders</span>
+            <span className="badge border-blue-200">Multi-Pet Profiles</span>
+            <span className="badge border-rose-200">Emergency Mode</span>
+          </div>
+          <div className="mt-8">
+            <a href="/vets" className="btn btn-primary">For Vets</a>
+          </div>
+        </div>
+      </section>
+
       {/* Trust */}
       <section className="section bg-slate-50">
         <div className="container text-center">
