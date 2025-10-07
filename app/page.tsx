@@ -27,42 +27,38 @@ export default function Page() {
             </div>
           </div>
 
-          {/* Right: 5-image carousel */}
-          <div>
-            <div className="card overflow-hidden">
-              <FeatureCarousel
-                items={[
-                  {
-                    src: "/mock_vertical_alt_set.png",
-                    alt: "Live Queue — next wait time and status",
-                    caption: "Live Queue & ETA",
-                  },
-                  {
-                    src: "/mock_vertical_light_dark_set.png",
-                    alt: "Smart arrival window and search window",
-                    caption: "Smart Arrival Window",
-                  },
-                  {
-                    src: "/hero_wide_light_dark_composite.png",
-                    alt: "AI Wait-Time Intelligence overview",
-                    caption: "AI Wait-Time Intelligence",
-                  },
-
-                  // Replace these two once you upload final images to /public
-                  // e.g. /feature_emergency_mode.png and /feature_qr_checkin.png
-                  {
-                    src: "/mock_vertical_light_dark_set.png",
-                    alt: "Emergency Mode — prioritize urgent cases",
-                    caption: "Emergency Mode",
-                  },
-                  {
-                    src: "/mock_vertical_alt_set.png",
-                    alt: "QR check-in and instant updates",
-                    caption: "QR Check-in",
-                  },
-                ]}
-              />
-            </div>
+          {/* Right: 5-image carousel (pulls from /public) */}
+          <div className="card overflow-hidden">
+            <FeatureCarousel
+              items={[
+                {
+                  src: "/doctor_delay_intelligence.png",
+                  alt: "Doctor Delay Intelligence",
+                  caption: "Doctor Delay Intelligence",
+                },
+                {
+                  src: "/predict_delay.png",
+                  alt: "Predict Delay",
+                  caption: "Predict Delay",
+                },
+                {
+                  src: "/one_dashboard.png",
+                  alt: "One Dashboard",
+                  caption: "One Dashboard",
+                },
+                {
+                  src: "/ai_health_companion.png",
+                  alt: "AI Health Companion",
+                  caption: "AI Health Companion",
+                },
+                {
+                  src: "/emergency_mode.png",
+                  alt: "Emergency Mode",
+                  caption: "Emergency Mode",
+                },
+              ]}
+              autoPlayMs={5000}
+            />
           </div>
         </div>
       </section>
