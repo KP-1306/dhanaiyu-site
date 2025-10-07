@@ -1,23 +1,30 @@
 // app/page.tsx
+import Image from "next/image";
 import FeatureCarousel from "./components/FeatureCarousel";
 
 export default function Page() {
   return (
     <div>
-      {/* HERO */}
+      {/* ============================ */}
+      {/* HERO                         */}
+      {/* ============================ */}
       <section className="section">
         <div className="container grid md:grid-cols-2 gap-10 items-center">
           {/* Left: Copy + CTAs */}
           <div>
             <h1 className="h1">AI that understands and respects your time.</h1>
             <p className="sub">
-              DhanAIyu’s intelligence engine predicts realistic waiting windows, streamlines
-              check-ins, and keeps families informed—before you leave home.
+              DhanAIyu’s intelligence engine predicts realistic waiting windows,
+              streamlines check-ins, and keeps families informed—before you leave home.
             </p>
 
             <div className="mt-8 flex gap-3">
-              <a href="/contact" className="btn btn-primary">Join the Waitlist</a>
-              <a href="/clinics" className="btn btn-ghost">For Clinics</a>
+              <a href="/contact" className="btn btn-primary">
+                Join the Waitlist
+              </a>
+              <a href="/clinics" className="btn btn-ghost">
+                For Clinics
+              </a>
             </div>
 
             <div className="mt-8 flex flex-wrap gap-3">
@@ -57,13 +64,15 @@ export default function Page() {
                   caption: "Emergency Mode",
                 },
               ]}
-              interval={5000}
+              interval={5000} // safe with your existing FeatureCarousel type
             />
           </div>
         </div>
       </section>
 
-      {/* Highlights */}
+      {/* ============================ */}
+      {/* HIGHLIGHTS                   */}
+      {/* ============================ */}
       <section className="section bg-slate-50">
         <div className="container grid md:grid-cols-3 gap-6">
           {[
@@ -88,7 +97,9 @@ export default function Page() {
         </div>
       </section>
 
-      {/* 1-2-3 steps */}
+      {/* ============================ */}
+      {/* 1–2–3 STEPS                  */}
+      {/* ============================ */}
       <section className="section">
         <div className="container grid md:grid-cols-3 gap-6">
           {[
@@ -105,33 +116,65 @@ export default function Page() {
         </div>
       </section>
 
-      {/* PETCARE STRIP */}
-      <section className="section">
-        <div className="container text-center">
-          <h2 className="h2">Built for People—and Pets</h2>
-          <p className="sub">
-            The same AI that reduces wait anxiety for families also powers smoother veterinary visits:
-            live ETAs, vaccination reminders, multi-pet profiles, and emergency triage.
-          </p>
-          <div className="mt-6 flex flex-wrap justify-center gap-3">
-            <span className="badge border-teal-200">Vet Queue & Check-in</span>
-            <span className="badge border-amber-200">Vaccination Reminders</span>
-            <span className="badge border-blue-200">Multi-Pet Profiles</span>
-            <span className="badge border-rose-200">Emergency Mode</span>
+      {/* ============================ */}
+      {/* PET CARE (COMING SOON)       */}
+      {/* ============================ */}
+      <section className="section bg-slate-50">
+        <div className="container grid md:grid-cols-2 gap-10 items-center">
+          {/* Left: Copy */}
+          <div>
+            <div className="text-sm font-medium tracking-wide text-sky-700 uppercase">
+              Coming Soon
+            </div>
+            <h2 className="h2 mt-2">Pet Care — same DhanAIyu intelligence, for your pets</h2>
+            <p className="sub mt-3">
+              Manage your pet’s appointments, reminders, vaccinations, and prescriptions
+              in one place. Real-time wait windows, smart notifications, and a single,
+              clean dashboard—powered by DhanAIyu intelligence.
+            </p>
+
+            <ul className="mt-6 space-y-2 text-slate-700">
+              <li>• Real-time wait windows & queue status</li>
+              <li>• Appointment & vaccination reminders</li>
+              <li>• Prescriptions tracked alongside medical history</li>
+              <li>• Vet & Pet-parent friendly, privacy-first design</li>
+            </ul>
+
+            <div className="mt-8 flex gap-3">
+              <a href="/pets" className="btn btn-primary">
+                Learn More
+              </a>
+              <a href="/contact" className="btn btn-ghost">
+                Join Early Access
+              </a>
+            </div>
           </div>
-          <div className="mt-8">
-            <a href="/vets" className="btn btn-primary">For Vets</a>
+
+          {/* Right: Image */}
+          <div className="card overflow-hidden">
+            <div className="relative w-full aspect-[16/10]">
+              <Image
+                src="/pet_care_hero.png"
+                alt="DhanAIyu Pet Care — unified dashboard for your pets"
+                fill
+                sizes="(max-width: 768px) 100vw, 600px"
+                className="object-cover"
+                priority={false}
+              />
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Trust */}
-      <section className="section bg-slate-50">
+      {/* ============================ */}
+      {/* TRUST                        */}
+      {/* ============================ */}
+      <section className="section">
         <div className="container text-center">
           <div className="h1">Built for privacy and trust</div>
           <p className="sub">
-            Minimal data collection; clinics own care and fees. Compliance-ready foundation
-            for HIPAA/SOC2/DPDP.
+            Minimal data collection; clinics and vets own care and fees.
+            Compliance-ready foundation for HIPAA/SOC2/DPDP.
           </p>
         </div>
       </section>
