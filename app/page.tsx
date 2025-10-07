@@ -6,7 +6,7 @@ export default function Page() {
       <section className="section">
         <div className="container grid md:grid-cols-2 gap-10 items-center">
           <div>
-            <h1 className="h1">AI that understands your time.</h1>
+            <h1 className="h1">AI that understands and respects your time.</h1>
             <p className="sub">DhanAIyu’s intelligence engine predicts realistic waiting windows, streamlines check‑ins, and keeps families informed—before you leave home.</p>
             <div className="mt-8 flex gap-3">
               <a href="/contact" className="btn btn-primary">Join the Waitlist</a>
