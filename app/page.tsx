@@ -57,7 +57,7 @@ export default function Page() {
                   caption: "Emergency Mode",
                 },
               ]}
-              autoPlayMs={5000}
+              interval={5000}
             />
           </div>
         </div>
