@@ -33,6 +33,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <Link href="/about">About</Link>
             <Link href="/careers">Careers</Link>
             <Link href="/contact">Contact</Link>
+            <Link href="/petcare" className="font-semibold text-sky-700">PetCare</Link> {/* NEW */}
           </nav>
           <div className="flex items-center gap-3">
             <Link href="/contact" className="btn btn-ghost">Talk to Us</Link>
